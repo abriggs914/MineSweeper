@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/gamesPlayedLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/gamesReportLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/gamesPlayedTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/games_played"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/gamesWonTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/games_won"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/gamesLostTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/games_lost"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gamesReportLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/timeLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamesPlayedLinearLayout"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/numGamesReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/gamesWonReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/gamesLostReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/timeReportLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamesReportLinearLayout"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/averageTimeTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/average_time"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/bestTimeTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/best_time"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/worstTimeTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/worst_time"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeReportLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/scoreLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeLinearLayout"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/averageTimeReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/bestTimeReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/worstTimeReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scoreLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/scoreReportLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeReportLinearLayout"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/averageScoreTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/average_score"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/bestScoreTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/best_score"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/worstScoreTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/worst_score"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scoreReportLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreLinearLayout"
+        app:layout_constraintBottom_toTopOf="@id/difficultyLinearLayout"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/averageScoreReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/bestScoreReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/worstScoreReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/difficultyLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/difficultyReportLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreReportLinearLayout"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/averageDifficultyTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/average_difficulty"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/difficultyRprtTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Difficulty "
+            android:gravity="right"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <TextView
+            android:id="@+id/difficultyReportTextView"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/difficultyReportLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonsLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/difficultyLinearLayout"
+        tools:layout_margin="10dp"
+        tools:padding="5dp">
+
+        <TextView
+            android:id="@+id/averageDifficultyReportTextView"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+        <FrameLayout
+            android:id="@+id/difficultyFrameLayout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            tools:layout_margin="5dp"
+            tools:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/radioButtonsLinearLayout"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyReportLinearLayout"
+        tools:layout_editor_absoluteY="328dp"
+        tools:layout_margin="5dp"
+        tools:padding="5dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bestTimeRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/best_time" />
+
+            <RadioButton
+                android:id="@+id/worstTimeRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/worst_time" />
+
+            <RadioButton
+                android:id="@+id/bestScoreRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/best_score" />
+
+            <RadioButton
+                android:id="@+id/worstScoreRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/worst_score" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top5ReportTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/top5ListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonsLinearLayout" />
+
+    <ListView
+        android:id="@+id/top5ListView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/last5ReportTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top5ReportTextView"
+        tools:layout_editor_absoluteY="382dp" />
+
+    <TextView
+        android:id="@+id/last5ReportTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top5ListView" />
+
+    <ListView
+        android:id="@+id/last5ListView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last5ReportTextView" />
+
+</android.support.constraint.ConstraintLayout>
